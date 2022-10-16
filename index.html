@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Wise Coding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Themify Icons-->
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <!-- Bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">Наши контакты:</h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              Telegram:
+              <a href="https://t.me/TCod3r" target="_blank"
+                >@tcod3r
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#0d6efd"
+                  class="bi bi-telegram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div>
+              <strong>E-mail:</strong>
+              <a href="mailto:wisecod3r@gmail.com">wisecod3r@gmail.com</a
+              >&nbsp;<i
+                class="ti-clipboard"
+                id="email-copy1"
+                onclick="changeIcon('email-copy1', 'email')"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Скопировать в буфер обмена"
+              ></i>
+            </div>
+            <div>
+              <strong>Jabber:</strong>
+              <span>cod3r@exploit.com</span>&nbsp;<i
+                class="ti-clipboard"
+                id="jabber-copy1"
+                onclick="changeIcon('jabber-copy1', 'jabber')"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Скопировать в буфер обмена"
+              ></i>
+            </div>
+            <div>
+              <strong>Discord:</strong>
+              <span>Wizard#1955</span>&nbsp;<i
+                class="ti-clipboard"
+                id="discord-copy1"
+                onclick="changeIcon('discord-copy1', 'discord')"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Скопировать в буфер обмена"
+              ></i>
+            </div>
+            <div>
+              <strong>qTox:</strong>
+              <span>B43394A4138D232D...</span>&nbsp;<i
+                class="ti-clipboard"
+                id="qTox-copy1"
+                onclick="changeIcon('qTox-copy1', 'qTox')"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Скопировать в буфер обмена"
+                data-action="toggle"
+              ></i>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gtco-loader"></div>
+
+    <div id="page">
+      <nav class="gtco-nav" role="navigation">
+        <div class="gtco-container">
+          <div class="row">
+            <div class="col-sm-2 col-xs-12">
+              <div id="gtco-logo">
+                <a href="index.html"
+                  ><img
+                    src="images/logo1.png"
+                    alt="Free HTML5 Website Template by FreeHTML5.co"
+                /></a>
+              </div>
+            </div>
+            <div class="col-xs-10 text-right menu-1">
+              <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <!-- <li><a href="about.html">About</a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <header id="gtco-header" class="gtco-cover" role="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-left">
+              <div class="display-t">
+                <div class="display-tc">
+                  <div class="row">
+                    <div class="col-md-5 text-center header-img animate-box">
+                      <img
+                        src="images/big_logo.png"
+                        alt="Free HTML5 Website Template by FreeHTML5.co"
+                      />
+                    </div>
+                    <div class="col-md-7 copy animate-box">
+                      <h1>Wise Coding (Development Service)</h1>
+                      <h2>Беремся за то, что другим не под силу</h2>
+                      <button
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                        class="btn btn-white"
+                      >
+                        Связаться с нами
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="gtco-services gtco-section">
+        <div class="gtco-container">
+          <div class="service__title">
+            <h2>
+              Вас приветствует команда разработчиков во главе с
+              <strong>Wizard</strong>-ом.
+            </h2>
+            <p>
+              <strong>8 лет</strong> на рынке разработки ПО. Сотни отзывов,
+              тысячи довольных клиентов по всему миру.
+              <br />
+              <strong>Более 1000</strong> разработанных продуктов за плечами.
+              <br />
+              Основной язык - <strong>C#</strong>.
+            </p>
+          </div>
+
+          <div id="wrapper">
+            <div class="service">
+              <h3><i class="ti-pie-chart"></i> Что мы предлагаем?</h3>
+              <ul id="offer-list">
+                <li>✔️ Разработку качественных программ любого калибра</li>
+                <li>
+                  ✔️ Профессиональный и индивидуальный подход к каждому клиенту
+                </li>
+                <li>✔️ Длительную поддержку продуктов</li>
+                <li>✔️ Скидки постоянным клиентам</li>
+                <li>✔️ Бонусы к заказам</li>
+              </ul>
+            </div>
+            <div class="service">
+              <h3><i class="ti-settings"></i> Что мы можем делать?</h3>
+              <ul id="offer-list">
+                <li>✔️ Чеккеры \ Парсеры \ Спаммеры</li>
+                <li>✔️ Накрутку зрителей \ просмотров \ траффика</li>
+                <li>✔️ Регистраторы аккаунтов</li>
+                <li>✔️ Сортировку\фильтрацию любых баз данных</li>
+                <li>
+                  ✔️ Софты-менеджеры, и любые другие индивидуальные инструменты
+                </li>
+                <li>✔️ Любая другая автоматизация действий</li>
+                <li>✔️ Нейросети (разработка любой модели)</li>
+                <li>✔️ Регистраторы аккаунтов</li>
+                <li>✔️ Сортировку\фильтрацию любых баз данных</li>
+                <li>
+                  ✔️ Софты-менеджеры, и любые другие индивидуальные инструменты
+                </li>
+              </ul>
+            </div>
+            <div class="service">
+              <h3><i class="ti-medall-alt"></i> С чем умеем работать?</h3>
+              <div class="divider">
+                <ul id="offer-list" class="">
+                  <li>✔️ HTTP2</li>
+                  <li>✔️ TLS 1.3 + другие SSL "секреты"</li>
+                  <li>✔️ JS-защиты разного калибра</li>
+                  <li>✔️ Tealeaf</li>
+                  <li>✔️ BlackBox</li>
+                </ul>
+                <ul id="offer-list">
+                  <li>✔️ Incapsula</li>
+                  <li>✔️ POP3/IMAP/SMTP</li>
+                  <li>✔️ 99% капч</li>
+                  <li>✔️ Мобильные и любые другие API</li>
+                </ul>
+              </div>
+            </div>
+            <div class="service">
+              <h3>
+                <i class="ti-na"></i> Что мы <strong>НЕ</strong> делаем и с чем
+                мы <strong>НЕ</strong> работаем?
+              </h3>
+              <ul id="offer-list">
+                <li>✖️ Вирусы, стиллеры, снифферы и прочую чернуху</li>
+                <li>✖️ Не работаем с гос. сайтами</li>
+                <li>✖️ Не работаем с финансовыми инстанциями</li>
+                <li>✖️ Не пишем серверное <strong>(пока что)</strong></li>
+              </ul>
+            </div>
+            <div class="service">
+              <h3><i class="ti-write"></i><strong>Условия работы</strong></h3>
+              <ul id="offer-list">
+                <li>
+                  <img src="images/1.svg" /> Работаем с предоплатой (или через
+                  гарант-сервис)
+                </li>
+                <li>
+                  <img src="images/2.svg" /> Работаем по ТЗ (помогаем с
+                  составлением)
+                </li>
+                <li>
+                  <img src="images/3.svg" /> Не работаем со школьниками
+                  <strong>(не про возраст, а про состояние души)</strong>
+                </li>
+                <li>
+                  <img src="images/4.svg" /> Софт может привязываться к железу
+                  (обговаривается отдельно)
+                </li>
+                <li>
+                  <img src="images/5.svg" /> Всегда предоставляю скидку за отзыв
+                </li>
+                <li>
+                  <img src="images/6.svg" /> Вы можете заработать с нами с
+                  вашего софта, детали в ЛС
+                </li>
+              </ul>
+            </div>
+            <button
+              data-toggle="modal"
+              data-target="#exampleModal"
+              class="btn btn-special"
+            >
+              Задать вопрос
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gtco-section gtco-products">
+        <div class="gtco-container">
+          <div class="row row-pb-sm">
+            <div class="col-md-8 col-md-offset-2 gtco-heading text-center">
+              <h2>Форумы с отзывами о нас:</h2>
+            </div>
+          </div>
+          <div class="row row-pb-md">
+            <div class="col-md-4 col-sm-4">
+              <a
+                href="https://bhf.im/threads/536050/"
+                target="_blank"
+                class="gtco-item two-row bg-img animate-box"
+              >
+                <div class="overlay">
+                  <i class="ti-arrow-top-right"></i>
+                  <div class="copy">
+                    <h3>BHM форум</h3>
+                    <p>Best Hack Forum</p>
+                  </div>
+                </div>
+                <img
+                  src="images/bhf.png"
+                  class="fullimg"
+                  alt="Free HTML5 Website Template by FreeHTML5.co"
+                />
+              </a>
+              <a
+                href="https://forum.exploit.in/topic/93848/"
+                target="_blank"
+                class="gtco-item two-row bg-img animate-box"
+              >
+                <div class="overlay">
+                  <i class="ti-arrow-top-right"></i>
+                  <div class="copy">
+                    <h3>Forum Exploit</h3>
+                  </div>
+                </div>
+                <img
+                  src="images/exploit.png"
+                  class="fullimg"
+                  alt="Free HTML5 Website Template by FreeHTML5.co"
+                />
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <a
+                href="https://forum.antichat.com/threads/417387/"
+                target="_blank"
+                class="gtco-item one-row bg-img animate-box"
+              >
+                <div class="overlay">
+                  <i class="ti-arrow-top-right"></i>
+                  <div class="copy">
+                    <h3>Antichat</h3>
+                    <p>
+                      Один из старейших и крупнейших форумов Рунета, посвященный
+                      безопасности в Интернете
+                    </p>
+                  </div>
+                </div>
+                <img
+                  src="images/Antichat.png"
+                  class="fullimg"
+                  alt="Free HTML5 Website Template by FreeHTML5.co"
+                />
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <a
+                href="https://cracked.io/Thread-C-Wise-Coding-Development-Service"
+                target="_blank"
+                class="gtco-item two-row bg-img animate-box"
+              >
+                <div class="overlay">
+                  <i class="ti-arrow-top-right"></i>
+                  <div class="copy">
+                    <h3>Cracked.io - Beyond the Limits</h3>
+                  </div>
+                </div>
+                <img
+                  src="images/cracked.png"
+                  class="fullimg"
+                  alt="Free HTML5 Website Template by FreeHTML5.co"
+                />
+              </a>
+              <a
+                href="https://wwh-club.io/index.php?threads/c-predlagaju-uslugi-po-razrabotke-softa.197903/"
+                target="_blank"
+                class="gtco-item two-row bg-img animate-box"
+              >
+                <div class="overlay">
+                  <i class="ti-arrow-top-right"></i>
+                  <div class="copy">
+                    <h3>WWH-CLUB- место встречи профессионалов</h3>
+                  </div>
+                </div>
+                <img
+                  src="images/wwh.png"
+                  style="background-color: rgb(245, 243, 243)"
+                  class="fullimg"
+                  alt="Free HTML5 Website Template by FreeHTML5.co"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="row"></div>
+        </div>
+      </div>
+
+      <footer id="gtco-footer" class="gtco-section" role="contentinfo">
+        <div class="gtco-container">
+          <div class="row row-pb-md">
+            <div class="col-md-8 col-md-offset-2 gtco-cta text-center">
+              <h3>С радостью выполним Ваш заказ!</h3>
+              <div>Список контактов:</div>
+              <div>
+                Telegram:
+                <a href="https://t.me/TCod3r" target="_blank"
+                  >@tcod3r
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#0d6efd"
+                    class="bi bi-telegram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <strong>E-mail:</strong>
+                <a id="email" href="mailto:wisecod3r@gmail.com"
+                  >wisecod3r@gmail.com</a
+                >&nbsp;<i
+                  class="ti-clipboard"
+                  id="email-copy"
+                  onclick="changeIcon('email-copy', 'email')"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Скопировать в буфер обмена"
+                ></i>
+              </div>
+              <div>
+                <strong>Jabber:</strong>
+                <span id="jabber">cod3r@exploit.com</span>&nbsp;<i
+                  class="ti-clipboard"
+                  id="jabber-copy"
+                  onclick="changeIcon('jabber-copy', 'jabber')"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Скопировать в буфер обмена"
+                ></i>
+              </div>
+              <div>
+                <strong>Discord:</strong>
+                <span id="discord">Wizard#1955</span>&nbsp;<i
+                  class="ti-clipboard"
+                  id="discord-copy"
+                  onclick="changeIcon('discord-copy', 'discord')"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Скопировать в буфер обмена"
+                ></i>
+              </div>
+              <div>
+                <strong>qTox:</strong>
+                <span id="qTox"
+                  >B43394A4138D232D20746922B7BC705EAC0231895CABC89229F857EDDD3E723326250CDE6CD2</span
+                >&nbsp;<i
+                  class="ti-clipboard"
+                  id="qTox-copy"
+                  onclick="changeIcon('qTox-copy', 'qTox')"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Скопировать в буфер обмена"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="gototop js-top">
+      <a href="#" class="js-gotop"><i class="ti-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.8.6/clipboard-polyfill.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
