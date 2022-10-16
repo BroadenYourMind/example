@@ -475,11 +475,12 @@
               </div>
               <div>
                 <strong>E-mail:</strong>
-                <a href="mailto:wisecod3r@gmail.com">wisecod3r@gmail.com</a
+                <a href="mailto:wisecod3r@gmail.com" id="email"
+                  >wisecod3r@gmail.com</a
                 >&nbsp;<i
                   class="ti-clipboard"
-                  id="email-copy1"
-                  onclick="changeIcon('email-copy1', 'email')"
+                  id="email-copy"
+                  onclick="changeIcon('email-copy', 'email')"
                   data-toggle="tooltip"
                   data-placement="top"
                   title="Скопировать в буфер обмена"
@@ -498,9 +499,10 @@
               </div>
               <div>
                 <strong>qTox:</strong>
-                <span id="qTox"
+                <span id="qTox" class="hidden"
                   >B43394A4138D232D20746922B7BC705EAC0231895CABC89229F857EDDD3E723326250CDE6CD2</span
-                >&nbsp;<i
+                >
+                <span>B43394A4138D232D...</span>&nbsp;<i
                   class="ti-clipboard"
                   id="qTox-copy"
                   onclick="changeIcon('qTox-copy', 'qTox')"

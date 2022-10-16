@@ -8,7 +8,6 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 async function copyTextToClipboard(text) {
   try {
     await navigator.clipboard.writeText(text);
-    console.log("Text copied to clipboard");
   } catch (err) {
     console.error("Error in copying text: ", err);
   }
